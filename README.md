@@ -3,7 +3,7 @@ A way to get plug's chat badge easily.
 
 #How to use
 
-Assuming `badgeName` is valid (you can check examples in [/img](img), we can do this :
+Assuming `badgeName` is valid (you can check examples in [/img](img)), we can do this :
 ```javascript
 var badgeURL = 'https://cdn.rawgit.com/WiBla/Plug-Badges/master/img/'+badgeName;
 // There are 4 gif badges
