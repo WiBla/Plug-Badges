@@ -1,7 +1,7 @@
-#Plug-Badges
+# Plug-Badges
 A way to get plug's chat badge easily.
 
-#How to use
+# How to use
 
 Assuming `badgeName` is valid (you can check examples in [/img](img)), we can do this :
 ```javascript
@@ -17,5 +17,5 @@ if (badgeName === 'beachb-e01' ||
 }
 ```
 
-##Disclaimer
+## Disclaimer
 All images listed here are property of Plug Technologies, Inc.
