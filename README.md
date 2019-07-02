@@ -5,16 +5,11 @@ A way to get plug's chat badge easily.
 
 Assuming `badgeName` is valid (you can check examples in [/img](img)), we can do this :
 ```javascript
-var badgeURL = 'https://cdn.rawgit.com/WiBla/Plug-Badges/master/img/'+badgeName;
+const baseURL = 'https://raw.githubusercontent.com/WiBla/Plug-Badges/master/img/';
 // There are 4 gif badges
-if (badgeName === 'beachb-e01' ||
-    badgeName === 'beachb-e02' ||
-    badgeName === 'nycb-e01' ||
-    badgeName === 'nycb-e02') {
-    badgeURL += '.gif';
-} else {
-    badgeURL += '.png';
-}
+const isGif = ['beachb-e01', 'beachb-e02', 'nycb-e01', 'nycb-e02'].indexOf(badgeName) > -1;
+const url = baseURL + badgeName + (isGif ? '.gif' : '.png');
+console.log(`Your image url for badge ${badgeName} is: ${url}`);
 ```
 
 ## Disclaimer
